@@ -12,7 +12,8 @@ class moveFiles {
     }
 
     public function __destruct(){
-
+        $this->strFrom = null;
+        $this->strTo = null;
     }
 
     /**
