@@ -20,7 +20,8 @@ class moveFiles {
             $resFromDir = opendir($this->strFrom);
 
             while($strFilename = readdir($resFromDir)){
-                rename($this->strFrom.DIRECTORY_SEPARATOR.$strFilename,$this->strTo.DIRECTORY_SEPARATOR.$strFilename);
+                echo('move '.$this->strFrom.DIRECTORY_SEPARATOR.$strFilename.' -> '.$this->strTo.DIRECTORY_SEPARATOR.$strFilename.PHP_EOL);
+                //rename($this->strFrom.DIRECTORY_SEPARATOR.$strFilename,$this->strTo.DIRECTORY_SEPARATOR.$strFilename);
             }
         }
 
