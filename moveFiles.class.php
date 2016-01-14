@@ -1,4 +1,7 @@
 <?php
+/**
+ * Class moveFiles
+ */
 class moveFiles {
     var $strFrom = null;
     var $strTo = null;
